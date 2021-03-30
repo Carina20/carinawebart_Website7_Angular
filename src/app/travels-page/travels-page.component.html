@@ -1,0 +1,63 @@
+<div class="container-fluid" id="main_travels">
+
+
+	<div class="container" id="container_offers">
+
+
+	<div class="row" id="heading_OffersContainer">
+			<div class="col-md-8 col-xs-1">
+				<h2> Our latest offers for you </h2>
+			</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-xs-1">
+			<p id="subheading"> Offers for 2 adults *</p>
+		</div>
+	</div>
+
+
+	<div class="row">
+
+
+		<div class="card-deck" id="card-deck">
+
+		
+				<div *ngFor="let offer of travels; index as offerId">
+
+  					
+
+  					<div class="card">
+  						
+    						<img class="card-img-top" src="{{offer.image}}" height="160px">
+   						 	
+   						 	<div class="card-body">
+      						
+      						<h5 class="card-title">{{offer.name}} </h5>
+     			 			
+     			 			<p class="card-text">{{offer.description}}</p><p class="location"><b>{{offer.location}}</b> </p> <div id="line">{{offer.line}}</div> <div id="price">{{offer.price}}
+     			 			<a class="btn btn select_button" [routerLink]="['/travels', offerId]" (click)="addToCart(offer)">Select offer</a>
+     			 			</div>
+ 
+     			 			</div>
+    				
+    				</div>
+
+
+					
+				</div> <!-----------end of loop--------------------->
+
+
+		</div> <!-----------end of card-deck--------------------->
+
+	
+		
+
+<div id="additional_info">* All offers for double-room with bathroom. Contact us at office@travelagain.at or call us (0043 1 67 435) to check available dates </div>
+	
+	</div> <!-----------end of row-------------------->
+	
+	</div> <!-----------end of container offers--------------------->
+			
+
+
+</div>

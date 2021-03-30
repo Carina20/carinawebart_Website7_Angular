@@ -1,0 +1,42 @@
+#main_travels {
+  background: url(src/assets/img/Cayo_Coco.jpg);
+  background-size: 100%; }
+
+#container_offers {
+  padding-top: 75px;
+  padding-bottom: 40px; }
+
+#heading_OffersContainer {
+  padding-top: 3px; }
+
+h2 {
+  color: #7fdff5; }
+
+#subheading {
+  color: #dff7fd;
+  padding-left: 20px;
+  font-size: 12pt; }
+
+.card-text {
+  padding-bottom: 0px; }
+
+.location {
+  padding-bottom: 10px; }
+
+#price {
+  font-size: 16pt;
+  font-weight: bold;
+  margin-bottom: 0px; }
+
+.card {
+  width: 105%; }
+
+#additional_info {
+  color: white;
+  margin-left: 18px;
+  font-size: 12pt; }
+
+.offer_box {
+  width: 100%; }
+
+/*# sourceMappingURL=travels-page.component.css.map */
